@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia</title>
+    </head>
+    <body>
+        <h2>Cara download Notepad++</h2>
+        <hr width="1500" align="left" style="4">
+        <p align="center">
+            <button onclick="durationVid()">duration</button> 
+            <button onclick="playVid()">playVid</button>
+            <button onclick="pauseVid()">pauseVid</button>
+            <button onclick="makefullscreen()">fullscreen</button>
+            <button onclick="makenormal()">normal</button>
+            <br></br>
+            <video id="video1" width="500">
+            <source src="Tutorial Cara Download dan Install Versi Terbaru Aplikasi Notepad++ PC_Laptop. Indonesia.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+            </video>
+        </p> 
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+
+           function  durationVid() { 
+                     myVideo.duration(); 
+           } 
+
+           function playVid() { 
+                    myVideo.play(); 
+           } 
+
+           function pauseVid() { 
+                    myVideo.pause();
+           } 
+
+           function makefullscreen() { 
+                    myVideo.width = 900; 
+           } 
+           function makenormal() { 
+                    myVideo.width = 500; 
+           } 
+        </script>
+        <p align="center">Video courtesy of <a href="https://www.youtube.com/watch?v=IK-tlzuCvfQ" target="_blank">Cara download notepad++</a>.</p>
+    </body>
+</html>
