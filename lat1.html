@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form - HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <h2>DATA DIRI MAHASISWA</h2>
+		<hr width="1500" align="left" style="4">
+        <form name="fmhs" method="post" action="proses.php">
+            <table>
+                <tr>
+                    <td>Nim : </td>
+                    <td><input type="number" name="inim" required></td>
+                </tr>
+                <tr>
+                    <td>Nama :</td>
+                    <td><input type="text" name="inama" required></td>
+                </tr>
+				<tr>
+                    <td>Alamat :</td>
+                    <td><input type="text" name="ialamat" required></td>
+                </tr>
+				<tr>
+                    <td>Asal Sekolah :</td>
+                    <td><input type="text" name="iasal" required></td>
+                </tr>
+                <tr>
+                    <td>Tgl Lahir :</td>
+                    <td><input type="date" name="ilahir" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin : </td>
+                    <td><input type="radio" name="jk" value="Laki-Laki" required>Laki-Laki
+                        <input type="radio" name="jk" value="Perempuan" required>Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prodi :</td>
+                    <td>
+                        <select name="iprod">
+                    <option>Pilih Prodi</option>
+                    <option>Teknik Informatika</option>
+                    <option>Sistem Informasi</option>
+                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bidang Minat :</td>
+                    <td><input type="checkbox" name="ibid1" value="Web Programming"><label>Web programming</label><br>
+                        <input type="checkbox" name="ibid2" value="Mobile Programming"><label>Mobile programming</label><br>
+                        <input type="checkbox" name="ibid3" value="Data Sciene"><label>Data sciene</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Berkas CV :</td>
+                    <td><input type="file" name="ifile" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="1px"></td>
+                    <td><input type="submit" name="isub"><input type="reset" name="ireset"></td>
+                </tr>
+            </table>
+        </form>
+</body>
+
+</html>
